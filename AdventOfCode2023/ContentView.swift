@@ -15,7 +15,7 @@ struct ContentView: View {
         }
         .padding()
         .onAppear {
-           _ = Day1Helper.calibrationDocumentValue(filename: "day1file")
+           _ = Day1Helper().calibrationDocumentValue(filename: "day1file2")
         }
     }
 }
