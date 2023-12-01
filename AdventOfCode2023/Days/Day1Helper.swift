@@ -121,15 +121,21 @@ class Day1Helper {
         return newString
     }
     
-    func calibrationDocumentValue(filename: String) -> Int {
+    func calibrationDocumentValue(data: Data) -> Int {
         
         var calibrationSum = 0
         var currentLineDigit = 0
+
         
-        if let path = Bundle.main.path(forResource: filename, ofType: "txt") {
-            do {
-                let data = try String(contentsOfFile: path, encoding: .utf8)
-                let myStrings = data.components(separatedBy: .newlines)
+    //    if let path = Bundle.main.path(forResource: filename, ofType: "txt") {
+//            do {
+//                print(url.path)
+             //   let data = try String(contentsOfFile: url.path)
+        
+        
+                let myStrings = String(decoding: data, as: UTF8.self).components(separatedBy: .newlines)
+                
+                print(myStrings)
                 
                 for myString in myStrings {
                     
@@ -155,10 +161,11 @@ class Day1Helper {
                     calibrationSum += currentLineDigit
                 }
                 
-            } catch {
-                print(error.localizedDescription)
-            }
-        }
+//            } catch {
+//                print("coucou")
+//                print(error.localizedDescription)
+//            }
+     //   }
         
         print("the result is \(calibrationSum)")
         return calibrationSum

@@ -8,15 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Text("Advent of Code 🎄")
-                .font(.title)
+        
+        NavigationView {
+            
+            List {
+                NavigationLink {
+                    Day1TrebuchetView()
+                } label: {
+                    VStack(alignment: .leading) {
+                        Text("Trebuchet")
+                            .font(.title)
+                        Text("Day 1")
+                            .foregroundColor(Color("AppGreen"))
+                    }
+                }
+            }
+            .navigationTitle("Advent of Code 🎄")
+            .navigationBarTitleDisplayMode(.large)
+    
         }
-        .padding()
-        .onAppear {
-           _ = Day1Helper().calibrationDocumentValue(filename: "day1file2")
-        }
+        .accentColor(Color("AppGreen"))
+ 
     }
 }
 

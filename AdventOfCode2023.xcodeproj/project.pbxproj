@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D384D40E2B1A64860090F827 /* Day1TrebuchetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D384D40D2B1A64860090F827 /* Day1TrebuchetView.swift */; };
 		D3A737022B19FE5200A1E49D /* AdventOfCode2023App.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A737012B19FE5200A1E49D /* AdventOfCode2023App.swift */; };
 		D3A737042B19FE5200A1E49D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A737032B19FE5200A1E49D /* ContentView.swift */; };
 		D3A737062B19FE5400A1E49D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3A737052B19FE5400A1E49D /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D384D40D2B1A64860090F827 /* Day1TrebuchetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day1TrebuchetView.swift; sourceTree = "<group>"; };
 		D3A736FE2B19FE5200A1E49D /* AdventOfCode2023.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdventOfCode2023.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A737012B19FE5200A1E49D /* AdventOfCode2023App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventOfCode2023App.swift; sourceTree = "<group>"; };
 		D3A737032B19FE5200A1E49D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +40,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D384D40C2B1A646A0090F827 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D384D40D2B1A64860090F827 /* Day1TrebuchetView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D3A736F52B19FE5200A1E49D = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +67,7 @@
 		D3A737002B19FE5200A1E49D /* AdventOfCode2023 */ = {
 			isa = PBXGroup;
 			children = (
+				D384D40C2B1A646A0090F827 /* Views */,
 				D3A737122B19FFB500A1E49D /* day1file.txt */,
 				D3A737182B1A18B300A1E49D /* day1file2.txt */,
 				D3A7370F2B19FE5C00A1E49D /* Days */,
@@ -158,6 +169,7 @@
 			files = (
 				D3A737112B19FE6D00A1E49D /* Day1Helper.swift in Sources */,
 				D3A737042B19FE5200A1E49D /* ContentView.swift in Sources */,
+				D384D40E2B1A64860090F827 /* Day1TrebuchetView.swift in Sources */,
 				D3A737022B19FE5200A1E49D /* AdventOfCode2023App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
