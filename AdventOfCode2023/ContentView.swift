@@ -10,12 +10,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Advent of Code 🎄")
+                .font(.title)
         }
         .padding()
+        .onAppear {
+           _ = Day1Helper.calibrationDocumentValue(filename: "day1file")
+        }
     }
 }
 
